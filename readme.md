@@ -68,8 +68,6 @@ Before running this project, ensure the following are installed on your system:
 
 #### Linux:
 
-1. Install FFmpeg using your package manager:
-   `sudo apt update`
-   `sudo apt install ffmpeg`
+1. Install FFmpeg using your package manager: `sudo apt update` / `sudo apt install ffmpeg`
 
 Now your system should be ready to play audio using `ffplay`!
