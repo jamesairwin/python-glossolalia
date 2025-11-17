@@ -14,49 +14,23 @@ This project demonstrates basic usage of the Eleven Labs text-to-speech API, mul
 
 ## Installation
 
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/jamesairwin/python-glossolalia.git
-   ```
+1. Clone this repository: `git clone https://github.com/jamesairwin/python-glossolalia.git`
 
-2. Navigate to the project directory:
-   ```bash
-   cd python-glossolalia
-   ```
+2. Navigate to the project directory: `cd python-glossolalia`
 
-3. Set up a virtual environment (optional but recommended):
-   ```bash
-   python -m venv venv
-   ```
+3. Set up a virtual environment (optional but recommended): `python -m venv venv`
 
 4. Activate the virtual environment:
+   - On Windows: `.\venv\Scripts\activate`
+   - On macOS/Linux: `source venv/bin/activate`
 
-   - On Windows:
-     ```bash
-     .\venv\Scripts\activate
-     ```
+5. Install the required dependencies: `pip install -r requirements.txt`
 
-   - On macOS/Linux:
-     ```bash
-     source venv/bin/activate
-     ```
-
-5. Install the required dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-6. Set up the environment variable for the Eleven Labs API key by creating a `.env` file in the project root. Add your API key as follows:
-   ```bash
-   API_KEY=your_api_key_here
-   ```
+6. Set up the environment variable for the Eleven Labs API key by creating a `.env` file in the project root. Add your API key as follows: `API_KEY=your_api_key_here`
 
 ## Usage
 
-1. Run the project:
-   ```bash
-   python main.py
-   ```
+1. Run the project: `python main.py`
 
 2. The program will generate random strings based on graphemes and sounds and send them to the Eleven Labs API for text-to-speech conversion. The audio will be played in real-time via `ffplay`.
 
@@ -84,25 +58,18 @@ Before running this project, ensure the following are installed on your system:
    - Under **System Variables**, find and edit the **Path** variable.
    - Add the full path to the bin folder (e.g., `C:\ffmpeg\bin`).
    - Click **OK** to save changes.
-4. To verify the installation, open a Command Prompt and type:
-   ```bash
-   ffplay -version
-   ```
+4. To verify the installation, open a Command Prompt and type: `ffplay -version`
+   
    You should see version information.
 
 #### macOS:
 
-1. Install FFmpeg via Homebrew:
-   ```bash
-   brew install ffmpeg
-   ```
+1. Install FFmpeg via Homebrew: `brew install ffmpeg`
 
 #### Linux:
 
 1. Install FFmpeg using your package manager:
-   ```bash
-   sudo apt update
-   sudo apt install ffmpeg
-   ```
+   `sudo apt update`
+   `sudo apt install ffmpeg`
 
 Now your system should be ready to play audio using `ffplay`!
